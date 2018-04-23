@@ -9,7 +9,7 @@
   <div class="homepage-content">
     <div class="row">
       {{ range .Params.forestry_highlight_pages }}
-      <div class="col-xs-24">Highlight page: {{ with .Site.GetPage "default" .forestry_highlight_page }}{{ .Title }}{{ end }}</div>
+      <div class="col-xs-24">Highlight page: {{ with .Site.GetPage "page" .forestry_highlight_page }}{{ .Title }}{{ end }}</div>
       {{ end }}
     </div>
     <div class="row">
