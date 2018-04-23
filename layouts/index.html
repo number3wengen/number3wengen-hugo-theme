@@ -1,3 +1,29 @@
+{{ define "main" }}
+<main aria-role="main">
+  <header class="homepage-header">
+    <h1>{{.Title}}</h1>
+    {{ with .Params.subtitle }}
+    <span class="subtitle">{{.}}</span>
+    {{ end }}
+  </header>
+  <div class="homepage-content">
+    {{.Content}}
+  </div>
+  <div>
+    {{ range first 3 .Data.Pages }}
+    {{ .Render "summary"}}
+    {{ if .Truncated }}
+    <div class="read-more-link">
+      <a href="{{ .RelPermalink }}">Read More…</a>
+    </div>
+      {{ end }}
+    {{ end }}
+  </div>
+</main>
+{{ end }}
+
+
+<!--
 {{ define "main" -}}
 <div class="posts">
 {{ range .Data.Pages -}}
@@ -16,3 +42,4 @@
 {{- end }}
 </div>
 {{- end }}
+-->
