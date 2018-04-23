@@ -1,0 +1,12 @@
+name = "Number 3 Wengen theme"
+license = "MIT"
+licenselink = "https://github.com/number3wengen/number3wengen-hugo-theme/blob/master/LICENSE.md"
+description = ""
+homepage = "http://number3wengen.com/"
+tags = ["", ""]
+features = ["", ""]
+min_version = 0.15
+
+[author]
+  name = "Austin Plunkett"
+  homepage = "https://austinplunkett.com"
