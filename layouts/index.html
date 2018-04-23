@@ -7,6 +7,9 @@
     {{ end }}
   </header>
   <div class="homepage-content">
+    {{ with .Params.highlight-page-01 }}
+    <p>Highlight page: {{.}}</p>
+    {{ end }}
     {{.Content}}
   </div>
   <div>
