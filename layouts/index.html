@@ -7,20 +7,28 @@
     {{ end }}
   </header>
   <div class="homepage-content">
-    {{ with .Params.highlight_page_01 }}
-    <p>Highlight page: {{.}}</p>
-    {{ end }}
-    {{.Content}}
-  </div>
-  <div>
-    {{ range first 3 .Data.Pages }}
-    {{ .Summary }}
-    {{ if .Truncated }}
-    <div class="read-more-link">
-      <a href="{{ .RelPermalink }}">Read More…</a>
-    </div>
+    <div class="row">
+      {{ range .Params.forestry_highlight_pages }}
+      <div class="col-xs-24">Highlight page: {{ index . 0 }}</div>
       {{ end }}
-    {{ end }}
+    </div>
+    <div class="row">
+      <div class="col-xs-24">
+	{{.Content}}
+      </div>
+    </div>
   </div>
+  <div class="row">
+    {{ range first 3 .Data.Pages }}
+    <div class="col-xs-24 col-sm-8">
+      {{ .Summary }}
+      {{ if .Truncated }}
+      <div class="read-more-link">
+        <a href="{{ .RelPermalink }}">Read More…</a>
+      </div>
+      {{ end }}
+    </div>
+    {{ end }}
+  </div><!-- .row -->
 </main>
 {{ end }}
