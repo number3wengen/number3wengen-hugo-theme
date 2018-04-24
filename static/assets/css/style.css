@@ -1,3 +1,13 @@
+body {
+    font-family: "Helvetica","Verdana","Arial",sans-serif;
+    background: #fdfbf9;
+    color: #444;
+}
+
+a {
+    color: #39d;
+}
+
 .fph {
     background-repeat: no-repeat;
     background-position: center center;
@@ -5,7 +15,7 @@
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    background-color: #eee;
+    background-color: #ddd;
 }
 
 .fph a {
