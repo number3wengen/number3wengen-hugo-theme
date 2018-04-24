@@ -1,13 +1,17 @@
 {{ define "main" }}
-<main aria-role="main">
-  <header class="homepage-header">
-    <h1>{{.Title}}</h1>
-    {{ with .Params.subtitle }}
-    <span class="subtitle">{{.}}</span>
-    {{ end }}
-  </header>
-  <div class="homepage-content">
-    <div class="row">
+<div class="container">
+  <div class="row">
+    <div class="col-xs-24" aria-role="main">
+      <header class="homepage-header">
+	<h1>{{.Title}}</h1>
+	{{ with .Params.subtitle }}
+	<span class="subtitle">{{.}}</span>
+	{{ end }}
+      </header>
+    </div><!-- .col -->
+  </div><!-- .row -->
+  <div class="row">
+    <div class="homepage-content">
       {{ range .Params.forestry_highlight_pages }}
       <div class="col-xs-24">Highlight page: {{ with .Site.GetPage "page" .forestry_highlight_page }}{{ . }}{{ end }}</div>
       {{ end }}
@@ -17,7 +21,7 @@
 	{{.Content}}
       </div>
     </div>
-  </div>
+  </div><!-- .row -->
   <div class="row">
     {{ range first 3 .Data.Pages }}
     <div class="col-xs-24 col-sm-8">
@@ -30,5 +34,5 @@
     </div>
     {{ end }}
   </div><!-- .row -->
-</main>
+</div><!-- .container -->
 {{ end }}
