@@ -12,7 +12,7 @@
   </div><!-- .row -->
   <div class="row">
     {{ range .Params.forestry_highlight_pages }}
-    <div class="col-xs-24">Highlight page: {{ with .Site.GetPage "page" .forestry_highlight_page }}{{ .Title }}{{ end }}</div>
+    <div class="col-xs-24">Highlight page: {{ $.Site.GetPage "page" .forestry_highlight_page }}<!-- with .Site.GetPage "page" .forestry_highlight_page } } { { .Title } } { { end } } </div> -->
     {{ end }}
   </div>
   <div class="row">
