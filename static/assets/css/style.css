@@ -13,6 +13,10 @@ a {
     width: 100%;
 }
 
+.mist {
+    background-color: rgba(127,127,127,0.2)
+}
+
 .sidebar a.title {
     display: block;
     text-decoration: none;
@@ -30,7 +34,7 @@ a {
     background: #39d;
 }
 
-.fph, .stripe.title.home a.title {
+.fph, .stripe.title.home {
     background-repeat: no-repeat;
     background-position: center center;
     -webkit-background-size: cover;

@@ -1,11 +1,13 @@
 <div class="stripe title{{ if .IsHome }} home{{ end }}"{{ if .IsHome }} style="background-image: url({{ .Params.banner_image }})"{{ end }}>
-  <div class="container">
-    <div class="row">
-      <div class="col-xs-24">
-	<div class="sidebar">
-	  <div class="sidebar-about">
-	    <a href="{{ .Site.BaseURL }}" class="title"><h1 class="title">{{ .Site.Title }}</h1></a>
-	    {{ with .Site.Params.description }}<p class="lead">{{.}}</p>{{ else }} {{end}}
+  <div class="mist">
+    <div class="container">
+      <div class="row">
+	<div class="col-xs-24">
+	  <div class="sidebar">
+	    <div class="sidebar-about">
+	      <a href="{{ .Site.BaseURL }}" class="title"><h1 class="title">{{ .Site.Title }}</h1></a>
+	      {{ with .Site.Params.description }}<p class="lead">{{.}}</p>{{ else }} {{end}}
+	    </div>
 	  </div>
 	</div>
       </div>
