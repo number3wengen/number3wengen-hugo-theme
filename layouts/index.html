@@ -1,16 +1,6 @@
 {{ define "main" }}
 <div class="container">
   <div class="row">
-    <div class="col-xs-24" aria-role="main">
-      <header class="homepage-header">
-        <h1>{{.Title}}</h1>
-        {{ with .Params.subtitle }}
-        <span class="subtitle">{{.}}</span>
-        {{ end }}
-      </header>
-    </div><!-- .col -->
-  </div><!-- .row -->
-  <div class="row">
     {{ range .Params.forestry_highlight_pages }}
       {{ with $.Site.GetPage "page" .forestry_highlight_page }}
         <div class="col-xs-24 col-sm-8">
@@ -26,17 +16,6 @@
       {{.Content}}
     </div>
   </div>
-  <div class="row">
-    {{ range first 3 .Data.Pages }}
-    <div class="col-xs-24 col-sm-8">
-      {{ .Summary }}
-      {{ if .Truncated }}
-      <div class="read-more-link">
-        <a href="{{ .RelPermalink }}">Read More…</a>
-      </div>
-      {{ end }}
-    </div>
-    {{ end }}
-  </div><!-- .row -->
+
 </div><!-- .container -->
 {{ end }}
