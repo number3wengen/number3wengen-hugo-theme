@@ -1,0 +1,12 @@
+.fph {
+    display: block;
+    min-height: 8em;
+    text-align: center;
+    padding-top: 2em;
+    background-repeat: no-repeat;
+    background-position: center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}

@@ -13,8 +13,10 @@
   <div class="row">
     {{ range .Params.forestry_highlight_pages }}
       {{ with $.Site.GetPage "page" .forestry_highlight_page }}
-        <div class="col-xs-24 col-sm-8" style="background-image: url({{ .Params.banner_image }})">
-	  <div><a href="{{ .RelPermalink }}">{{ .Title }}</a></div>
+        <div class="col-xs-24 col-sm-8">
+          <div class="fph" style="background-image: url({{ .Params.banner_image }})">
+	    <div><a href="{{ .RelPermalink }}">{{ .Title }}</a></div>
+	  </div>
         </div>
       {{ end }}
     {{ end }}
