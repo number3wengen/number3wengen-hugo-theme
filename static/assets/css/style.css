@@ -37,6 +37,9 @@ a {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+}
+
+.fph {
     background-color: #ddd;
 }
 
