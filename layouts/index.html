@@ -3,21 +3,19 @@
   <div class="row">
     <div class="col-xs-24" aria-role="main">
       <header class="homepage-header">
-	<h1>{{.Title}}</h1>
-	{{ with .Params.subtitle }}
-	<span class="subtitle">{{.}}</span>
-	{{ end }}
+        <h1>{{.Title}}</h1>
+        {{ with .Params.subtitle }}
+        <span class="subtitle">{{.}}</span>
+        {{ end }}
       </header>
     </div><!-- .col -->
   </div><!-- .row -->
   <div class="row">
     {{ range .Params.forestry_highlight_pages }}
-    <div class="col-xs-24">
       {{ with $.Site.GetPage "page" .forestry_highlight_page }}
-      <div>
-	<div>{{ .Title }}</div>
-	<div>{{ .Summary }}</div>
-      </div>
+        <div class="col-xs-24 col-sm-8">
+	  <div><a href="{{ .RelPermalink }}">{{ .Title }}</a></div>
+        </div>
       {{ end }}
     {{ end }}
   </div>
