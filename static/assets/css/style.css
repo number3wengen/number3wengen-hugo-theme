@@ -17,21 +17,20 @@ a {
     display: block;
     text-decoration: none;
     color: white;
-}
-
-.stripe.title {
-    background: silver;
-}
-
-.stripe.title.home {
-    background: black;
+    letter-spacing: 1px;
+    text-shadow: 0px 0px 8px black;
+    background: none;
 }
 
 .stripe.title.home .sidebar a.title {
     padding: 4em 0;
 }
 
-.fph {
+.stripe.title {
+    background: #39d;
+}
+
+.fph, .stripe.title.home a.title {
     background-repeat: no-repeat;
     background-position: center center;
     -webkit-background-size: cover;
