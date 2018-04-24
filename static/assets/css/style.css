@@ -13,15 +13,21 @@ a {
     width: 100%;
 }
 
-.stripe.title .sidebar a.title {
+.sidebar a.title {
     display: block;
     text-decoration: none;
     color: white;
+}
+
+.stripe.title {
     background: silver;
 }
 
-.stripe.title.home .sidebar a.title {
+.stripe.title.home {
     background: black;
+}
+
+.stripe.title.home .sidebar a.title {
     padding: 4em 0;
 }
 
