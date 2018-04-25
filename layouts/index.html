@@ -5,7 +5,7 @@
       {{ with $.Site.GetPage "page" .forestry_highlight_page }}
         <div class="col-xs-24 col-sm-8">
           <div class="fph" style="background-image: url({{ .Params.banner_image }})">
-	    <div><a href="{{ .RelPermalink }}">{{ .Title }}</a></div>
+	    <div><a href="{{ .RelPermalink }}">{{ .Title }}</a><p class="strapline"><p class="strapline">{{ .Params.strapline }}</p></div>
 	  </div>
         </div>
       {{ end }}
